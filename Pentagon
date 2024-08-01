@@ -1,0 +1,29 @@
+package com.mycompany.abstractclass;
+
+
+public class Pentagon extends Figure {
+    protected double side;
+    protected double perimeter;
+    protected double apoteme;
+
+    public Pentagon() {
+    }
+
+    public Pentagon(double side, double perimeter, double apoteme, double x, double y) {
+        super(x, y);
+        this.side = side;
+        this.perimeter = perimeter;
+        this.apoteme = apoteme;
+    }
+    
+    
+    @Override
+    public double toCalculateArea() {
+        side = 10;
+        perimeter = side * 5;
+        apoteme = 5;
+        double result = perimeter * apoteme / 2;
+        return result;
+    }
+    
+}
